@@ -1,801 +1,430 @@
-<!--
- * @Author: Jon Barron
- * @Date: 2019-05-11 22:15:22
- * @Editors: whyisyoung
- * @EditTime: 2020-10-23 10:57:25
- * @LastEditors:sheng-qiang
- * @LastEditTime: 2021-02-05 22:39:00
- -->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<html>
-
-<head>
-  <meta name=viewport content="width=device-width">
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <meta name="google-site-verification" content="p7SNRHPF7y83Q-nNBLkrxFhAAosW2t40unwTxByZ0vo" />
-  <style type="text/css">
-    /* Color scheme stolen from Sergey Karayev */
-
-    a {
-      color: #1772d0;
-      /* color: #07889b; */
-      text-decoration: none;
-    }
-   
-    a.black {
-      color: #000000;
-      /* color: #07889b; */
-      text-decoration: none;
-    }
-
-    a:focus,
-    a:hover {
-      color: #e37222; /* #f09228; */
-      text-decoration: none;
-    }
-
-    body,
-    td,
-    th,
-    tr,
-    p,
-    a {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 16px
-    }
-
-    strong {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 16px;
-    }
-
-    heading {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 22px;
-      color: #00C3DE;
-    }
-
-    subheading {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 18px;
-      font-style:italic;
-      color: #00C3DE;
-    }
-
-    papertitle {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    name {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 32px;
-    }
-
-    .footer {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 14px;
-      opacity: 0.75;
-      color: #777;
-    }
-
-    .one {
-      width: 160px;
-      height: 160px;
-      position: relative;
-    }
-
-    .two {
-      width: 160px;
-      height: 160px;
-      position: absolute;
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-
-    .fade {
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-
-    span.highlight {
-      background-color: #ffffd0;
-    }
-
-    span.artifact {
-      color:#6cb41b;
-      padding: 1px;
-    }
-
-    span.underline {
-      border-bottom:1px solid black;
-      padding-bottom:1px;
-    }
-
-    span.tldr {
-      color: #555555;
-    }
-
-    em.highlight {
-      color: #e37222;
-    }
-  </style>
-  <link rel="icon" type="image/jpg" href="images/zh-icon.jpg">
-  <title>Zihao He's Homepage</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-</head>
-
-<body>
-  <table width="960" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-      <td>
-        <!-- Intro Begin -->
-        <table width="100%" align="left" border="0" cellspacing="0" cellpadding="12" style="table-layout:fixed;">
-          <colgroup>
-            <col span="1" style="width: 23%;">
-            <col span="1" style="width: 77%;">
-          </colgroup>
-          <tr>
-            <td valign="middle">
-              <img style="border-square:50%;" src="images/zihaohe_portrait.jpeg" height="170px">
-            </td>
-            <td valign="middle">
-              <p align="left">
-                <name>Zihao He</name>
-              </p>
-              <p>
-                  Zihao is a fifth-year PhD candidate in computer science at Department of Computer Science and <a href="https://www.isi.edu">Information Sciences Insitute</a> of University of Southern California (USC). He is advised by Prof. <a href="https://www.isi.edu/people/lerman/about">Kristina Lerman</a>. He is generally interested in natural language processing, computational social science, and graph representational learning. Specifically, he works on discovering polarization from text using natural language processing.
-
-              <p align=left>Contact: zihaoh@usc.edu, zihaohe@isi.edu</p>
-              <p align=left>
-                <a href="data/cv_zihaohe.pdf">Currículum Vitae</a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-                <a href="https://github.com/zihaohe123/"> GitHub </a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-<!--                <a href="https://scholar.google.com/citations?user=8BEUQ9UAAAAJ">Google Scholar</a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;-->
-                  <a href="https://scholar.google.com/citations?user=yrkXzXIAAAAJ&hl=en">Google Scholar</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-<!--                <a href="https://www.researchgate.net/profile/Qiang_Sheng5/">ResearchGate</a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;-->
-<!--                <a href="https://orcid.org/0000-0002-2481-5023"> ORCID </a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;-->
-<!--                <a href="https://dblp.org/pid/199/7557.html"> DBLP </a>-->
-                  <a href="https://www.linkedin.com/in/zihao-he-b5645a153/">Linkedin</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-                  <a href="https://twitter.com/ZihaoHe95">Twitter</a>
-              </p>
-<!--              <p align=left>-->
-<!--                <a href="https://www.zhihu.com/column/c_1394265881195753473"> Zhihu Column </a>  &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;-->
-<!--                <a href="https://aclanthology.org/people/q/qiang-sheng/">ACL Anthology</a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;-->
-<!--                <a href="https://ir.webis.de/anthology/people/q/qiang+sheng/"> IR Anthology </a> -->
-<!--              </p>-->
-            </td>
-          </tr>
-        </table>
-        <!-- Intro End -->
-
-        <!-- News Begin -->
-<!--        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">-->
-<!--          <tr>-->
-<!--            <td>-->
-<!--              <heading>News</heading>-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--        </table>-->
-<!--        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">-->
-<!--          <colgroup>-->
-<!--            <col span="1" style="width: 23%;">-->
-<!--            <col span="1" style="width: 77%;">-->
-<!--          </colgroup>-->
-<!--            <tr>-->
-<!--            <td valign="center">-->
-<!--              04/2022-->
-<!--            </td>-->
-<!--            <td valign="center">-->
-<!--                One first-authored paper got accepted by Information Processing and Management.-->
-<!--            </td>-->
-<!--           </tr>-->
-<!--           <tr>-->
-<!--            <td valign="center">-->
-<!--              04/2022-->
-<!--            </td>-->
-<!--            <td valign="center">-->
-<!--                Will give talks on <a href="#ACL2022">our ACL 2022 work</a> at the <a href="https://mp.weixin.qq.com/s/h07yRc46bRkDvmrtXvpYOQ">BUAFAI 2022</a> and <a href="https://mp.weixin.qq.com/s/s3tfoLZdYW_K2lq_yYejtA">AI TIME Live</a>.-->
-<!--            </td>-->
-<!--           </tr>-->
-<!--           <tr>-->
-<!--            <td valign="center">-->
-<!--              04/2022-->
-<!--            </td>-->
-<!--            <td valign="center">-->
-<!--                One co-authored paper got accepted by SIGIR 2022.-->
-<!--            </td>-->
-<!--           </tr>-->
-<!--           <tr>-->
-<!--            <td valign="center">-->
-<!--              02/2022-->
-<!--            </td>-->
-<!--            <td valign="center">-->
-<!--                One first-authored paper got accepted by ACL 2022.-->
-<!--            </td>-->
-<!--           </tr>-->
-<!--           <tr>-->
-<!--            <td valign="center">-->
-<!--              12/2021-->
-<!--            </td>-->
-<!--            <td valign="center">-->
-<!--                One co-authored paper got accepted by AAAI 2022.-->
-<!--            </td>-->
-<!--           </tr>-->
-<!--           <tr>-->
-<!--            <td valign="center">-->
-<!--              10/2021-->
-<!--            </td>-->
-<!--            <td valign="center">-->
-<!--                Invited to serve as a Reviewer for ACL Rolling Review.-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--           <tr>-->
-<!--            <td valign="center">-->
-<!--              09/2021-->
-<!--            </td>-->
-<!--            <td valign="center">-->
-<!--                Invited to serve as a PC Member for AAAI 2022.-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <td valign="center">-->
-<!--              08/2021-->
-<!--            </td>-->
-<!--            <td valign="center">-->
-<!--                One co-authored paper got accepted by ACM MM 2021 Industrial Track.-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <td valign="center">-->
-<!--              08/2021-->
-<!--            </td>-->
-<!--            <td valign="center">-->
-<!--                One co-first-authored paper got accepted by ACM CIKM 2021.-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <td valign="center">-->
-<!--              06/2021-->
-<!--            </td>-->
-<!--            <td valign="center">-->
-<!--                Served as a reviewer for EMNLP 2021.-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--          <td>-->
-<!--           <a href="news.html">Full List</a>-->
-<!--          </td>-->
-<!--          <td>-->
-<!--          </td>-->
-<!--         </tr>-->
-<!--        </table>-->
-        <!-- News End -->
-
-        <!-- Publications Begin -->
-
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
-          <tr>
-              <td>
-                  <heading>Preprints</heading>
-              </td>
-          </tr>
-      </table>
-      <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
-          <!-- <colgroup>
-            <col span="1" style="width: 23%;">
-            <col span="1" style="width: 77%;">
-          </colgroup> -->
-
-          <tr>
-              <td valign="center">
-                  <papertitle>How Susceptible are Large Language Models to Ideological Manipulation?</papertitle> [<a href="https://arxiv.org/abs/2402.11725">Paper</a>]
-                  <br>
-                  Kai Chen, <span class="underline">Zihao He</span>, Jun Yan, Taiwei Shi, Kristina Lerman
-              </td>
-          </tr>
-
-          <tr>
-              <td valign="center">
-                  <papertitle>Whose Emotions and Moral Sentiments Do Language Models Reflect?</papertitle> [<a href="https://arxiv.org/abs/2402.11114">Paper</a>]
-                  <br>
-                  <span class="underline">Zihao He</span>, Siyi Guo, Ashwin Rao, Kristina Lerman
-              </td>
-          </tr>
-
-
-          <tr>
-              <td valign="center">
-                  <papertitle>Characterizing Online Eating Disorder Communities with Large Language Models</papertitle> [<a href="https://arxiv.org/abs/2401.09647">Paper</a>]
-                  <br>
-                  Minh Duc Chu, Aryan Karnati, <span class="underline">Zihao He</span>, Kristina Lerman
-              </td>
-          </tr>
-
-          <tr>
-              <td valign="center">
-                  <papertitle>IsamasRed: A Public Dataset Tracking Reddit Discussions on Israel-Hamas Conflict</papertitle> [<a href="https://arxiv.org/abs/2401.08202">Paper</a>][<a href="https://github.com/kaichen23/israel-hamas">Code</a>]
-                  <br>
-                  Kai Chen, <span class="underline">Zihao He</span>, Keith Burghardt, Jingxin Zhang, Kristina Lerman
-              </td>
-          </tr>
-
-
-          <tr>
-              <td valign="center">
-                  <papertitle>Affective Polarization and Dynamics of Information Spread in Online Networks</papertitle> [<a href="https://assets.researchsquare.com/files/rs-3855114/v1_covered_88d5c85d-df20-4972-bbb3-ab65f9f6174d.pdf?c=1705386550">Paper</a>]
-                  <br>
-                  Kristina Lerman, Dan Feldman, <span class="underline">Zihao He</span>, Ashwin Rao
-              </td>
-          </tr>
-
-          <tr>
-              <td valign="center">
-                  <papertitle>The Pulse of Mood Online: Unveiling Emotional Reactions in a Dynamic Social Media Landscape</papertitle> [<a href="https://arxiv.org/abs/2401.06275">Paper</a>]
-                  <br>
-                  Siyi Guo, <span class="underline">Zihao He</span>, Ashwin Rao, Fred Morstatter, Jeffrey Brantingham, Kristina Lerman
-              </td>
-          </tr>
-
-
-
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
-          <tr>
-            <td>
-              <heading>Selected Publications</heading>
-            </td>
-          </tr>
-        </table>
-        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
-          <!-- <colgroup>
-            <col span="1" style="width: 23%;">
-            <col span="1" style="width: 77%;">
-          </colgroup> -->
-
-
-<!--        <td>-->
-<!--            <subheading>2024</subheading>-->
-<!--        </td>-->
-
-            <tr>
-                <td valign="center">
-                    <papertitle>Reading Between the Tweets: Deciphering Ideological Stances of Interconnected Mixed-Ideology Communities</papertitle> [<a href="https://arxiv.org/abs/2402.01091">Paper</a>][<a href="https://github.com/zihaohe123/communitylm-message-passing">Code</a>]
-                    <br>
-                    <span class="underline">Zihao He</span>, Ashwin Rao, Siyi Guo, Negar Mokhberian, Kristina Lerman
-                    <br>
-                    <i>Findings of EACL 2024</i>
-                    <br>
-                </td>
-            </tr>
-
-
-
-        <tr>
-            <td valign="center">
-                <papertitle>CPL-NoViD: Context-Aware Prompt-based Learning for Norm Violation Detection in Online Communities</papertitle> [<a href="https://arxiv.org/abs/2305.09846">Paper</a>]
-                <br>
-                <span class="underline">Zihao He</span>, Jonathan May, Kristina Lerman
-                <br>
-                <i>ICWSM 2024</i>
-                <br>
-            </td>
-        </tr>
-
-
-<!--        <td>-->
-<!--            <subheading>2023</subheading>-->
-<!--        </td>-->
-
-
-
-
-<!--        <tr>-->
-<!--            <td valign="center">-->
-<!--                <papertitle>Inducing Political Bias Allows Language Models Anticipate Partisan Reactions to Controversies</papertitle> [<a href="https://arxiv.org/abs/2311.09687">Paper</a>]-->
-<!--                <br>-->
-<!--                <span class="underline">Zihao He</span>, Siyi Guo, Ashwin Rao, Kristina Lerman-->
-<!--                <br>-->
-<!--                <i>Preprint, 2023</i>-->
-<!--                <br>-->
-<!--            </td>-->
-<!--        </tr>-->
-
-        <tr>
-            <td valign="center">
-                <papertitle>Anger breeds controversy: Analyzing controversy and emotions on reddit</papertitle> [<a href="https://arxiv.org/abs/2212.00339">Paper</a>]
-                <br>
-                Kai Chen, <span class="underline">Zihao He</span>, Rong-Ching Chang, Jonathan May, Kristina Lerman
-                <br>
-                <i>SBP-BRiMS 2023</i>
-                <br>
-            </td>
-        </tr>
-
-        <tr>
-            <td valign="center">
-                <papertitle>Measuring Online Emotional Reactions to Offline Events</papertitle> [<a href="https://arxiv.org/abs/2307.10245">Paper</a>]
-                <br>
-                Siyi Guo, <span class="underline">Zihao He</span>, Ashwin Rao, Eugene Jang, Yuanfeixue Nan, Fred Morstatter, Jeffrey Brantingham, Kristina Lerman
-                <br>
-                <i>ASONAM 2023</i>
-                <br>
-            </td>
-        </tr>
-
-        <tr>
-            <td valign="center">
-                <papertitle>ALCAP: Alignment-Augmented Music Captioner</papertitle> [<a href="https://arxiv.org/abs/2212.10901">Paper</a>][<a href="https://github.com/zihaohe123/ALCAP">Code</a>]
-                <br>
-                <span class="underline">Zihao He</span>, Weituo Hao, Wei-Tsung Lu, Changyou Chen, Kristina Lerman, Xuchen Song
-                <br>
-                <i>EMNLP 2023</i>
-                <br>
-            </td>
-        </tr>
-
-
-<!--          <td>-->
-<!--            <subheading>2022</subheading>-->
-<!--          </td>-->
-
-            <tr>
-            <td valign="center">
-                <papertitle>Infusing Knowledge from Wikipedia to Enhance Stance Detection</papertitle> [<a href="https://arxiv.org/abs/2204.03839">Paper</a>][<a href="https://github.com/zihaohe123/wiki-enhanced-stance-detection">Code</a>]
-                <br>
-                <span class="underline">Zihao He</span>, Negar Mokhberian, Kristina Lerman
-                <br>
-                <i><a class="black" href="https://wassa-workshop.github.io">12th Workshop on Computational Approaches to Subjectivity, Sentiment & Social Media Analysis (WASSA) @ ACL2022</a></i>
-                <br>
-<!--                <br>-->
-<!--                <span class="tldr">TL;DR: Based on the largest false news dataset on Chinese Weibo (44k+), we characterize the spread of false news in nine domains and analyze the underlying user effects. </span>-->
-            </td>
-           </tr>
-
-
-<!--          <td>-->
-<!--            <subheading>2021</subheading>-->
-<!--          </td>-->
-
-          <tr>
-            <td valign="center">
-                <papertitle>Detecting Polarized Topics Using Partisanship-aware Contextualized Topic Embeddings</papertitle> [<a href="https://arxiv.org/abs/2104.07814">Paper</a>][<a href="https://github.com/zihaohe123/pacte-polarized-topics-detection">Code</a>][<a href="https://www.isi.edu/news/45490/measuring-media-polarization/">Media Coverage</a>]
-                <br>
-                <span class="underline">Zihao He</span>, Negar Mokhberian, António Câmara, Andres Abeliuk, Kristina Lerman
-                <br>
-                <i>Findings EMNLP 2021</i>
-                <br>
-            </td>
-          </tr>
-
-
-          <tr>
-            <td valign="center">
-                <papertitle>Speaker Turn Modeling for Dialogue Act Classification</papertitle> [<a href="https://arxiv.org/abs/2109.05056">Paper</a>][<a href="https://github.com/zihaohe123/speak-turn-emb-dialog-act-clf">Code</a>]
-                <br>
-                <span class="underline">Zihao He</span>, Leili Tavabi, Kristina Lerman, Mohammad Soleymani
-                <br>
-                <i>Findings EMNLP 2021</i>
-                <br>
-            </td>
-          </tr>
-
-
-<!--          <tr>-->
-<!--            <td valign="center">-->
-<!--                <papertitle>The emergence of heterogeneous scaling in research institutions</papertitle> [<a href="https://www.nature.com/articles/s42005-021-00693-2">Paper</a>]-->
-<!--                <br>-->
-<!--                Keith Burghardt, <span class="underline">Zihao He</span>, Allon Percus, Kristina Lerman-->
-<!--                <br>-->
-<!--                <i>Communications Physics 4.1 (2021): 1-6</i>-->
-
-<!--            </td>-->
-<!--          </tr>-->
-
-
-<!--          <td>-->
-<!--            <subheading>2020</subheading>-->
-<!--          </td>-->
-
-
-          <tr>
-            <td valign="center">
-                <papertitle>Training interpretable convolutional neural networks by differentiating class-specific filters</papertitle> [<a href="https://arxiv.org/abs/2007.08194">Paper</a>][<a href="https://github.com/hyliang96/CSGCNN">Code</a>]
-                <br>
-                Haoyu Liang, Zhihao Ouyang, Yuyuan Zeng, Hang Su, <span class="underline">Zihao He</span>, Shu-Tao Xia, Jun Zhu, Bo Zhang
-                <br>
-                <i>ECCV 2020.</i>
-            </td>
-          </tr>
-
-
-          <tr>
-            <td valign="center">
-                <papertitle>Graph Embedding with Personalized Context Distribution</papertitle> [<a href="https://dl.acm.org/doi/abs/10.1145/3366424.3391263">Paper</a>][<a href="https://github.com/zihaohe123/personalized_graph_embedding">Code</a>]
-                <br>
-                Di Huang*, <span class="underline">Zihao He*</span>, Yuzhong Huang*, Kexuan Sun*, Sami Abu-El-Haija, Bryan Perozzi, Kristina Lerman, Fred Morstatter, Aram Galstyan
-                <br>
-                <i>Companion Proceedings of WWW 2020</i>
-                <br>
-            </td>
-          </tr>
-
-
-
-<!--            <td>-->
-<!--                <subheading>2019</subheading>-->
-<!--            </td>-->
-
-
-            <tr>
-                <td valign="center">
-                    <papertitle>Automatic Grassland Degradation Estimation Using Deep Learning</papertitle> [<a href="https://www.ijcai.org/proceedings/2019/835">Paper</a>]
-                    <br>
-                    Xiyu Yan, Yong Jiang, Shuai Chen, <span class="underline">Zihao He</span>, Chunmei Li, Shu-Tao Xia, Tao Dai, Shuo Dong, Feng Zheng
-                    <br>
-                    <i>IJCAI 2019</i>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td valign="center">
-                    <papertitle>Attentiondrop for Convolutional Neural Networks</papertitle> [<a href="https://ieeexplore.ieee.org/abstract/document/8784837">Paper</a>]
-                    <br>
-                    Zhihao Ouyang, Yan Feng, <span class="underline">Zihao He</span>, Tianbo Hao, Tao Dai, Shu-Tao Xia
-                    <br>
-                    <i>ICME 2019</i>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td valign="center">
-                    <papertitle>Neural Style Transfer with Content Discrimination</papertitle> [<a href="https://ieeexplore.ieee.org/abstract/document/8795012">Paper</a>]
-                    <br>
-                    Xiyu Yan, Yeli Xing, <span class="underline">Zihao He</span>, Tao Dai, Yong Jiang, Shu-Tao Xia
-                    <br>
-                    <i>ICME Workshops 2019</i>
-                </td>
-            </tr>
-
-
-        </table>
-        <!-- Publications End -->
-   
-        <!-- Talks Begin -->
-<!--        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">-->
-<!--          <tr>-->
-<!--            <td>-->
-<!--              <heading>Talks</heading>-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--        </table>-->
-<!--        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">-->
-<!--          <colgroup>-->
-<!--                <col span="1" style="width: 23%;">-->
-<!--                <col span="1" style="width: 77%;">-->
-<!--          </colgroup>-->
-<!--          <tr>-->
-<!--            <td valign="center">-->
-<!--                2022/4-->
-<!--            </td>-->
-<!--            <td>-->
-<!--                <strong>AI TIME Live </strong> (<a href="https://mp.weixin.qq.com/s/s3tfoLZdYW_K2lq_yYejtA">WeChat Article</a> / -->
-<!--                <a href="https://www.bilibili.com/video/BV1MS4y1e7PY">Chinese Video</a> /-->
-<!--                <a href="https://mp.weixin.qq.com/s/aTFeuCYIpSoazeRi52jqew">Chinese Blog</a>)-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <td valign="center">-->
-<!--                2022/4-->
-<!--            </td>-->
-<!--            <td>-->
-<!--                <strong>BUAFAI 2022 (NLP & Speech Forum) </strong> (<a href="https://mp.weixin.qq.com/s/h07yRc46bRkDvmrtXvpYOQ">WeChat Article</a> / <a href="https://www.koushare.com/lives/room/685619">Chinese Video</a>)-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--        </table>-->
-        <!-- Talks End -->
-   
-
-
-        <!-- Profession Begin -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
-          <tr>
-            <td>
-              <heading>Academic Services</heading>
-            </td>
-          </tr>
-        </table>
-        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
-          <colgroup>
-                <col span="1" style="width: 23%;">
-                <col span="1" style="width: 77%;">
-          </colgroup>
-        </table>
-        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
-          <colgroup>
-                <col span="1" style="width: 23%;">
-                <col span="1" style="width: 77%;">
-          </colgroup>
-          <tr>
-            <td valign="center">
-                Reviewer/PC Member
-            </td>
-            <td>
-                ACL, EMNLP, NAACL, EACL, ACL Rolling Review, KDD, WWW, ICWSM
-            </td>
-          </tr>
-        </table>
-        <!-- Profession End -->
-
-
-      <!-- Teaching Begin -->
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
-          <tr>
-              <td>
-                  <heading>Teaching Experience</heading>
-              </td>
-          </tr>
-
-      </table>
-      <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
-          <colgroup>
-              <col span="1" style="width: 23%;">
-              <col span="1" style="width: 77%;">
-          </colgroup>
-
-          <tr>
-              <td valign="center">
-                  Spring 2022
-              </td>
-              <td>Teaching Assistant, DSCI 531: Fairness in Artificial Intelligence, USC
-              </td>
-          </tr>
-
-          <tr>
-              <td valign="center">
-                  Spring 2024
-              </td>
-              <td>Teaching Assistant, CSCI 566: <a href="https://usc-asap.github.io/CSCI566-S24/">Deep Learning and its Applications</a>, USC
-              </td>
-          </tr>
-
-
-      </table>
-      <!-- Teaching End -->
-
-        <!-- Education Begin -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
-          <tr>
-            <td>
-              <heading>Education</heading>
-            </td>
-          </tr>
-        </table>
-        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
-          <colgroup>
-                <col span="1" style="width: 23%;">
-                <col span="1" style="width: 77%;">
-          </colgroup>
-          <tr>
-            <td valign="center">
-              08/2019-Present
-            </td>
-            <td>
-                Doctor of Philosophy, Computer Science
-                <br>
-                University of Southern California, Los Angeles, CA, USA
-            </td>
-          </tr>
-
-
-            <tr>
-                <td valign="center">
-                    09/2018-06/2019
-                </td>
-                <td>
-                    Master of Science, Computer Technology (Transferred)
-                    <br>
-                    Tsinghua University, Beijing, China
-                    <span></span>
-                </td>
-            </tr>
-
-          <tr>
-            <td valign="center">
-              09/2014-06/2018
-            </td>
-            <td>
-                Bachelor of Engineering, Communication Engineering
-                <br>
-                Beijing University of Posts and Telecommunications, Beijing, China
-                <span></span>
-            </td>
-          </tr>
-
-        </table>
-        <!-- Education End -->
-
-          <!-- Industry Begin -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
-              <tr>
-                  <td>
-                      <heading>Experience</heading>
-                  </td>
-              </tr>
-          </table>
-          <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
-              <colgroup>
-                  <col span="1" style="width: 23%;">
-                  <col span="1" style="width: 77%;">
-              </colgroup>
-
-              <tr>
-                  <td valign="center">
-                      05/2023-08/2023
-                  </td>
-                  <td>
-                      Research Intern
-                      <br>
-                      Tiktok, Mountain View, CA, USA
-                  </td>
-              </tr>
-
-              <tr>
-                  <td valign="center">
-                      05/2021-08/2021
-                  </td>
-                  <td>
-                      Applied Scientist Intern
-                      <br>
-                      Amazon, Seattle, WA, USA
-                  </td>
-              </tr>
-
-              <tr>
-                  <td valign="center">
-                      05/2020-08/2020
-                  </td>
-                  <td>
-                      Algorithm Development Intern
-                      <br>
-                      Didi Chuxing, Beijing, China
-                  </td>
-              </tr>
-
-          </table>
-          <!-- Industry End -->
-       
-<!--       &lt;!&ndash; Awards Begin &ndash;&gt;-->
-<!--        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">-->
-<!--          <tr>-->
-<!--            <td>-->
-<!--              <heading>Honors and Awards</heading>-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--        </table>-->
-<!--        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">-->
-<!--          <colgroup>-->
-<!--                <col span="1" style="width: 23%;">-->
-<!--                <col span="1" style="width: 77%;">-->
-<!--          </colgroup>-->
-<!--          <tr>-->
-<!--            <td valign="center">-->
-<!--              2019-->
-<!--            </td>-->
-<!--            <td>-->
-<!--                Annenberg Fellowship, University of Southern California-->
-<!--            </td>-->
-<!--          </tr>-->
-
-        </table>
-      </td>
-    </tr>
-  </table>
-</body>
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Hi, this is Nelson. Please DELETE the <script> block below (L6-L13)
+          if you use this HTML, otherwise my analytics will track your page. -->
+	    <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-51640218-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <title>Zihao He</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta property="og:url" content="http://zihaohe.me" />
+	    <meta property="og:title" content="Zihao He" />
+	    <meta property="og:image" content="http://zihaohe.me/img/zihaohe_portrait.jpeg" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="author" content="Zihao He">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" type="image/png" href="zhongli-ganyu-banner.avif"/>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div class="row mb-3">
+                <div class="col-lg-3 col-md-4">
+                    <img class="img-fluid rounded" src="img/zihaohe_portrait.jpeg" alt="Zihao He">
+                    <p>
+                        <i class="fa fa-envelope pt-3"></i> zihaoh@usc.edu
+<!--                    </br>-->
+<!--                        <i class="fa fa-building"></i> Gates 318-->
+                    </p>
+                </div>
+                <div class="col-lg-9 col-md-8">
+                    <h1>Zihao He</h1>
+                    <p>
+                        I'm a final-year PhD candidate in computer science at University of Southern California (USC),
+                        where I work at the <a href="https://www.isi.edu">Information Sciences Insitute</a>.
+                        I am advised by Prof. <a href="https://www.isi.edu/people/lerman/about">Kristina Lerman</a>.
+                        I am interested in the intersection of natural language processing and computational social science.
+                        Recently, I'm focused on evaluating the societal impacts of large language models (LLMs)
+                        and their alignment with different demographic groups.
+                    </p>
+                    <p>
+                        Previously, I received undergraduate degree in Communication Engineering from Beijing
+                        University of Posts and Telecommunications, where I worked with <a href="http://www.whdeng.cn">Weihong Deng</a>.
+                        I've spent time at Tsinghua University working with <a href="https://www.sigs.tsinghua.edu.cn/xst/main.htm">Shutao Xia</a>.
+                        During my PhD, I've interned at Amazon and TikTok.
+                    </p>
+
+                    <p>
+                        I'm on the job market this year! If you are hiring and interested, drop me an email,
+                        I'm more than happy to chat :-)
+                    </p>
+
+                    <p>
+                        [<a href="files/cv_zihaohe.pdf" target="_blank">Full CV</a>] [<a href="https://x.com/ZihaoHe95" target="_blank">Twitter</a>] [<a href="https://github.com/zihaohe123" target="_blank">Github</a>] [<a href="https://scholar.google.com/citations?user=yrkXzXIAAAAJ&hl=en" target="_blank">Google Scholar</a>] [<a href="https://www.linkedin.com/in/zihao-he-b5645a153/" target="_blank">Linkedin</a>]
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <h2>Recent News</h2>
+                    <ul>
+                        <li>
+                            [05/2024] Our paper "Whose Emotions and Moral Sentiments do Language Models Reflect?" got accpeted to
+                            ACL 2024-Findings!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col">
+                    <h2>Education</h2>
+                    <p>
+                        Aug 2019 - Present (Expected Dec 2024) <br>
+                        Ph.D. in Computer Science, University of Southern California, Los Angeles, CA, United States
+                    </p>
+
+                    <p>
+                        Sep 2018 - June 2019 (Transferred) <br>
+                        M.S. in Computer Engineering, Tsinghua University, Beijing, China
+                    </p>
+
+                    <p>
+                        Sep 2014 - June 2018 <br>
+                        B.E. in Communication Engineering, Beijing University of Posts and Telecommunications, Beijing, China
+                    </p>
+
+                </div>
+            </div>
+            <hr>
+
+
+
+            <div class="row" id="publications">
+                <div class="col">
+                    <h2>Selected Publications & Preprints</h2>
+                    <ul class="pl">
+
+                        <li>
+                            <a href="https://arxiv.org/abs/2406.12074" target="_blank">
+                                <b>COMMUNITY-CROSS-INSTRUCT: Unsupervised Instruction Generation for Aligning Large Language Models to Online Communities</b>
+                            </a>
+                            <br/>
+                            Zihao He, Rebecca Dorn, Siyi Guo, Minh Duc Chu, Kristina Lerman
+                            <br/>
+                            Preprint, 2024
+                        </li>
+                        <br>
+
+
+                        <li>
+                            <a href="https://arxiv.org/abs/2402.11725" target="_blank">
+                                <b>How Susceptible are Large Language Models to Ideological Manipulation?</b>
+                            </a>
+                            <br/>
+                            Kai Chen, Zihao He, Jun Yan, Taiwei Shi, Kristina Lerman
+                            <br/>
+                            Preprint, 2024
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href="https://arxiv.org/abs/2401.09647" target="_blank">
+                                <b>Large Language Models Help Reveal Unhealthy Diet and Body Concerns in Online Eating Disorders Communities</b>
+                            </a>
+                            <br/>
+                            Minh Duc Chu, Zihao He, Rebecca Dorn, Kristina Lerman
+                            <br/>
+                            Preprint, 2024
+                        </li>
+                        <br>
+
+
+                        <li>
+                            <a href="https://arxiv.org/abs/2402.11114" target="_blank">
+                                <b>Whose Emotions and Moral Sentiments Do Language Models Reflect?</b>
+                            </a>
+                            <br/>
+                            Zihao He, Siyi Guo, Ashwin Rao, Kristina Lerman
+                            <br/>
+                            ACL-Findings, 2024
+<!--                            <br/>-->
+<!--                            [<a href="papers/dasigi+liu+marasovic+smith+gardner.emnlp2019.bib" target="_blank">bib</a>]-->
+<!--                            [<a href="#" onclick="$('#dasigi_liu_marasovic_smith_gardner_emnlp2019_abstract').toggle();return false;">abstract</a>]-->
+<!--                            [<a href="papers/dasigi+liu+marasovic+smith+gardner.emnlp2019.poster.pdf" target="_blank">poster</a>]-->
+<!--                            [<a href="https://quoref-dataset.s3-us-west-2.amazonaws.com/train_and_dev/quoref-train-dev-v0.1.zip" target="_blank">dataset</a>]-->
+<!--                            [<a href="https://leaderboard.allenai.org/quoref" target="_blank">leaderboard</a>]-->
+<!--                            <div id="dasigi_liu_marasovic_smith_gardner_emnlp2019_abstract" class="abstract" style="display:none;">-->
+<!--                                <p>-->
+<!--                                    Machine comprehension of texts longer than a-->
+<!--                                    single sentence often requires coreference-->
+<!--                                    resolution. However, most current reading-->
+<!--                                    comprehension benchmarks do not contain-->
+<!--                                    complex coreferential phenomena and hence-->
+<!--                                    fail to evaluate the ability of models to-->
+<!--                                    resolve coreference. We present a new-->
+<!--                                    crowdsourced dataset containing more than-->
+<!--                                    24K span-selection questions that require-->
+<!--                                    resolving coreference among entities in-->
+<!--                                    over 4.7K English paragraphs from Wikipedia.-->
+<!--                                    Obtaining questions focused on such-->
+<!--                                    phenomena is challenging, because it is hard-->
+<!--                                    to avoid lexical cues that shortcut-->
+<!--                                    complex reasoning. We deal with this issue-->
+<!--                                    by using a strong baseline model as an-->
+<!--                                    adversary in the crowdsourcing loop, which-->
+<!--                                    helps crowdworkers avoid writing questions-->
+<!--                                    with exploitable surface cues. We show that-->
+<!--                                    state-of-the-art reading comprehension-->
+<!--                                    models perform significantly worse than-->
+<!--                                    humans on this benchmark—the best model-->
+<!--                                    performance is 70.5 F1, while the estimated-->
+<!--                                    human performance is 93.4 F1.-->
+<!--                                </p>-->
+<!--                            </div>-->
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href="https://ojs.aaai.org/index.php/ICWSM/article/view/31335" target="_blank">
+                                <b>CPL-NoViD: Context-Aware Prompt-based Learning for Norm Violation Detection in Online Communities</b>
+                            </a>
+                            <br/>
+                            Zihao He, Jonathan May, Kristina Lerman
+                            <br/>
+                            ICWSM, 2024
+                        </li>
+                        <br>
+
+
+                        <li>
+                            <a href="https://ojs.aaai.org/index.php/ICWSM/article/view/31434" target="_blank">
+                                <b>IsamasRed: A Public Dataset Tracking Reddit Discussions on Israel-Hamas Conflict</b>
+                            </a>
+                            <br/>
+                            Kai Chen, Zihao He, Keith Burghardt, Jingxin Zhang, Kristina Lerman
+                            <br/>
+                            ICWSM, 2024
+                        </li>
+                        <br>
+
+
+                        <li>
+                            <a href="https://aclanthology.org/2024.uncertainlp-1.11" target="_blank">
+                                <b>Don't Blame the Data, Blame the Model: Understanding Noise and Bias When Learning from Subjective Annotations</b>
+                            </a>
+                            <br/>
+                            Abhishek Anand, Negar Mokhberian, Prathyusha Kumar, Anweasha Saha, Zihao He, Ashwin Rao, Fred Morstatter, Kristina Lerman
+                            <br/>
+                            Proceedings of the 1st Workshop on Uncertainty-Aware NLP (UncertaiNLP), 2024
+                        </li>
+                        <br>
+
+
+                        <li>
+                            <a href="https://aclanthology.org/2024.findings-eacl.104" target="_blank">
+                                <b>Reading Between the Tweets: Deciphering Ideological Stances of Interconnected Mixed-ideology Communities</b>
+                            </a>
+                            <br/>
+                            Zihao He, Ashwin Rao, Siyi Guo, Negar Mokhberian, Kristina Lerman
+                            <br/>
+                            EACL-Findings, 2024
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href="https://dl.acm.org/doi/10.1145/3625007.3627477" target="_blank">
+                                <b>Measuring Online Emotional Reactions to Events</b>
+                            </a>
+                            <br/>
+                            Siyi Guo, Zihao He, Ashwin Rao, Eugene Jang, Yuanfeixue Nan, Fred Morstatter, Jeffrey Brantingham, Kristina Lerman
+                            <br/>
+                            ASONAM, 2023
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href="https://dl.acm.org/doi/10.1145/3625007.3627477" target="_blank">
+                                <b>Anger Breeds Controversy: Analyzing Controversy and Emotions on Reddit</b>
+                            </a>
+                            <br/>
+                            Kai Chen, Zihao He, Rong-Ching Chang, Jonathan May, Kristina Lerman
+                            <br/>
+                            SBP-BRiMS, 2023
+                        </li>
+                        <br>
+
+
+                        <li>
+                            <a href="https://aclanthology.org/2023.emnlp-main.1028/" target="_blank">
+                                <b>ALCAP: Alignment-Augmented Music Captioner</b>
+                            </a>
+                            <br/>
+                            Zihao He, Weituo Hao, Wei-Tsung Lu, Changyou Chen, Kristina Lerman, Xuchen Song
+                            <br/>
+                            EMNLP, 2023
+                        </li>
+                        <br>
+
+
+                        <li>
+                            <a href="https://aclanthology.org/2022.wassa-1.7" target="_blank">
+                                <b>Infusing Knowledge from Wikipedia to Enhance Stance Detection</b>
+                            </a>
+                            <br/>
+                            Zihao He, Negar Mokhberian, Kristina Lerman
+                            <br/>
+                            Proceedings of the 12th Workshop on Computational Approaches to Subjectivity, Sentiment & Social Media Analysis, 2022
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href="https://aclanthology.org/2021.findings-emnlp.181" target="_blank">
+                                <b>Detecting Polarized Topics Using Partisanship-aware Contextualized Topic Embeddings</b>
+                            </a>
+                            <br/>
+                            Zihao He, Negar Mokhberian, António Câmara, Andres Abeliuk, Kristina Lerman
+                            <br/>
+                            EMNLP-Findings, 2021
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href="https://aclanthology.org/2021.findings-emnlp.185" target="_blank">
+                                <b>Speaker Turn Modeling for Dialogue Act Classification</b>
+                            </a>
+                            <br/>
+                            Zihao He, Leili Tavabi, Kristina Lerman, Mohammad Soleymani
+                            <br/>
+                            EMNLP-Findings, 2021
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href="https://dl.acm.org/doi/10.1145/3366424.3391263" target="_blank">
+                                <b>Graph Embedding with Personalized Context Distribution</b>
+                            </a>
+                            <br/>
+                            Zihao He, Di Huang, Yuzhong Huang, Kexuan Sun, Sami Abu-El-Haija, Bryan Perozzi, Kristina Lerman, Fred Morstatter, Aram Galstyan
+                            <br/>
+                            Companion Proceedings of the Web Conference, 2020
+                        </li>
+                        <br>
+
+
+                        <li>
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-030-58536-5_37" target="_blank">
+                                <b>Training interpretable convolutional neural networks by differentiating class-specific filters</b>
+                            </a>
+                            <br/>
+                            Haoyu Liang, Zhihao Ouyang, Yuyuan Zeng, Hang Su, Zihao He, Shu-Tao Xia, Jun Zhu, Bo Zhang
+                            <br/>
+                            ECCV, 2020
+                        </li>
+                        <br>
+
+
+                        <li>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/8795012" target="_blank">
+                                <b>Neural Style Transfer with Content Discrimination</b>
+                            </a>
+                            <br/>
+                            Xiyu Yan, Yeli Xing, Zihao He, Tao Dai, Yong Jiang, Shu-Tao Xia
+                            <br/>
+                            ICMEW, 2019
+                        </li>
+                        <br>
+
+
+                        <li>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/8784837" target="_blank">
+                                <b>Attentiondrop for Convolutional Neural Networks</b>
+                            </a>
+                            <br/>
+                            Zhihao Ouyang, Yan Feng, Zihao He, Tianbo Hao, Tao Dai, Shu-Tao Xia
+                            <br/>
+                            ICME, 2019
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/8784837" target="_blank">
+                                <b>Automatic Grassland Degradation Estimation Using Deep Learning</b>
+                            </a>
+                            <br/>
+                            Xiyu Yan, Yong Jiang, Shuai Chen, Zihao He, Chunmei Li, Shu-Tao Xia, Tao Dai, Shuo Dong, Feng Zheng
+                            <br/>
+                            IJCAI, 2019
+                        </li>
+                        <br>
+
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h2>Industrial Experience</h2>
+                    <ul>
+                        <li>
+                            Research Scientist Intern@TikTok, San Jose, CA, May-Aug 2023 & 2024
+                        </li>
+                        <li>
+                            Applied Scientist Intern@Amazon, Remote, May-Aug 2022
+                        </li>
+                        <li>
+                            Algorithm Development Intern@DiDi Global, Beijing, Apr-Jul 2020
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h2>Miscellany</h2>
+                    <ul>
+                        <li>
+                            In my spare time I enjoy cooking and hiking.
+                        </li>
+                        <li>
+                            I was born in Yichang, Hubei, a key transportation hub on the Yangtze River. The city is
+                            known for its proximity to the Three Gorgets Dam, the world's largest hydroelectric power station.
+                        </li>
+                        <li>
+                            Many thanks to <a href="">Nelson Liu</a> for sharing the source code of this website!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <footer class="pt-2 my-md-2 pt-md-2 border-top">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-md text-left align-self-center">
+                        <p class="h5 text-muted">
+                            © Zihao He, 2024
+                        </p>
+                    </div>
+<!--                    <div class="col-6 col-md text-right">-->
+<!--                        <a href="https://nlp.stanford.edu" class="image-link">-->
+<!--                            <img class="mr-4" src="img/stanford_nlp_logo.gif" alt="Stanford NLP Group logo." height="75">-->
+<!--                        </a>-->
+<!--                        <a href="http://ai.stanford.edu" class="image-link">-->
+<!--                            <img src="img/stanford_ai_logo.jpg" alt="Stanford AI Lab logo." height="75">-->
+<!--                        </a>-->
+<!--                    </div>-->
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>
