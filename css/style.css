@@ -1,20 +1,333 @@
-html {
-    background-color: #fefefe;
-}
+/* ===================================================
+   Zihao He — Polished Academic Theme
+   Dependencies: Bootstrap 4.3, Font Awesome 4.7
+   =================================================== */
 
-body p, li {
-    color: #454545;
-    font-size: 20px;
+/* ----- Base & Typography ----- */
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: Palatino, "EB Garamond", Georgia, "Times New Roman", serif
+    font-family: "EB Garamond", Palatino, Georgia, "Times New Roman", serif;
+    color: #333;
+    font-size: 1.25rem;
+    line-height: 1.75;
+    background-color: #fff;
 }
 
-.row:not(#publications) a {
-    text-decoration: underline;
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.6rem;
 }
 
-.image-link {
+h2 {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.01em;
+}
+
+p, li {
+    color: #454545;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+/* ----- Sticky Navbar ----- */
+.navbar {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    background-color: #fff !important;
+    border-bottom: 1px solid #e8e8e8;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.navbar-brand {
+    font-family: "EB Garamond", Georgia, serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #1a1a1a !important;
+}
+
+.navbar-nav .nav-link {
+    color: #555 !important;
+    padding: 0.4rem 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #1a1a1a !important;
+}
+
+/* Offset scroll targets so sticky nav doesn't cover headings */
+section[id] {
+    scroll-margin-top: 70px;
+}
+
+/* ----- Section Spacing & Alternating Backgrounds ----- */
+.site-section {
+    padding: 3rem 0;
+}
+
+.site-section:nth-of-type(even) {
+    background-color: #fafafa;
+}
+
+.site-section:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+/* ----- Header / About Section ----- */
+.about-photo {
+    border-radius: 6px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Social icon row in header */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0.8rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.social-links li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #555;
+    font-size: 1.1rem;
     text-decoration: none !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.social-links li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* ----- Links ----- */
+a {
+    color: #2a6496;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+a:hover {
+    color: #1a4a72;
+    border-bottom-color: #1a4a72;
+    text-decoration: none;
+}
+
+/* Remove underline effect from social icons, nav links, badges */
+.social-links a,
+.navbar a,
+.pub-badge,
+.image-link {
+    border-bottom: none !important;
+}
+
+/* ----- Publication Cards ----- */
+.pub-card {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.1rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.pub-card:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.pub-title {
+    font-weight: 700;
+    font-size: 1.08rem;
+    color: #2a6496;
+    display: block;
+    margin-bottom: 0.3rem;
+    border-bottom: none !important;
+}
+
+.pub-title:hover {
+    color: #1a4a72;
+}
+
+.pub-authors {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 0.15rem;
+}
+
+.pub-venue {
+    font-size: 0.92rem;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.pub-links {
+    margin-top: 0.4rem;
+}
+
+.pub-badge {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid #d0d0d0;
+    color: #555;
+    background: #fafafa;
+    margin-right: 0.35rem;
+    margin-bottom: 0.25rem;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pub-badge:hover {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+    text-decoration: none;
+}
+
+.pub-badge .fa {
+    margin-right: 0.25rem;
+}
+
+/* ----- Education Timeline ----- */
+.edu-entry {
+    margin-bottom: 1.2rem;
+    padding-left: 1rem;
+    border-left: 3px solid #e0e0e0;
+}
+
+.edu-entry .edu-date {
+    font-size: 0.9rem;
+    color: #888;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.15rem;
+}
+
+.edu-entry .edu-detail {
+    font-size: 1rem;
+    color: #454545;
+}
+
+/* ----- Experience List ----- */
+.exp-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.exp-list li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.exp-list li:last-child {
+    border-bottom: none;
+}
+
+/* ----- News List ----- */
+.news-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.news-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1rem;
+}
+
+.news-list li:last-child {
+    border-bottom: none;
+}
+
+.news-date {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 0.82rem;
+    color: #888;
+    min-width: 5.5rem;
+    margin-right: 0.5rem;
+}
+
+/* ----- Miscellany List ----- */
+.misc-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.misc-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1rem;
+}
+
+.misc-list li:last-child {
+    border-bottom: none;
+}
+
+/* ----- Footer ----- */
+footer {
+    padding: 1.5rem 0;
+    border-top: 1px solid #e8e8e8;
+    background-color: #fafafa;
+}
+
+footer p {
+    font-size: 0.88rem;
+    color: #aaa;
+    margin: 0;
+}
+
+/* ----- Responsive Tweaks ----- */
+@media (max-width: 768px) {
+    .site-section {
+        padding: 2rem 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    .pub-card {
+        padding: 1rem 1.1rem;
+    }
+
+    body {
+        padding-top: 56px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        padding-top: 60px;
+    }
 }
